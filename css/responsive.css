@@ -1,0 +1,235 @@
+
+/* ==== Medium layout ==== */
+@media screen and (min-width:768px) and (max-width:1179px) {
+  .practiceskills p {
+    margin-bottom: 14px;  
+  }
+  .about-my {
+    padding: 3rem 2rem;
+  }
+  .btn-group {
+    margin: 25px 0;
+  }
+  .skills-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .skills-content  h2.title {
+    margin-bottom: 0px;
+  }
+  .skills-content .row .mainskills {
+    padding: 30px 15px;
+  }
+  .project-title {
+    margin-bottom: 0px;
+  }
+  .contact-content .contact-title h2 {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1110px) {
+ .projects {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .project {
+    flex-basis: 48%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .profile-text p {
+    margin-bottom: 30px;
+    margin-top: 46px;
+  }
+  .about-profile {
+    padding-top: 30px;
+  }
+  .about-my .profile-photo {
+    margin-top: 36px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .about-profile {
+    padding-top: 0px;
+    gap: 30px;
+  }
+  .about-my .profile-photo {
+    margin-top: 56px;
+  }
+  .about-my h1 {
+    font-size: x-large;
+  }
+  .skills-content  h2.title {
+    font-size: x-large;
+  }
+  .project-title h2 {
+    font-size: x-large;
+  }
+  .contact-content .contact-title h2 {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamb {
+    display: block;
+    cursor: pointer;
+  }
+  .hamb.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamb.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamb.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  } 
+  menu {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    z-index: 20;
+    background-color: #323946;
+    height: auto;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.05s ease;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .menu > .menu-nav {
+    position: relative;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 32px;
+  }
+  .menu > .menu-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+  .menu.active {
+    position: fixed;
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    overflow: visible;
+    right: 0px;
+    top: 62px;
+    z-index: 20;
+    background-color: rgba(246, 246, 246, 0.353);
+    height: auto;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.5s ease;
+    pointer-events: inherit;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .menu-nav {
+    position: relative;
+    min-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: none;
+  }
+  .about-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+  .profile-text p {
+    margin-top: 30px 0;
+    font-size: medium;
+  }
+  .btn-group {
+    margin: 0px;
+  }
+  .btn-group .btn {
+    font-size: medium;
+    padding:8px 18px;
+  }
+  .skills-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .skills-content .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-content .row p {
+    font-size: medium;
+    line-height: x-large;
+  }
+  .skills-content .row .practiceskills .mainskills-item {
+    padding-bottom: 2px;
+  }
+  .skills-content .row .skills,
+  .skills-content .row .practiceskills {
+    color: #e5e5e5;
+    flex:0 0 50%;
+    max-width: 70%;
+    margin-top: 30px;
+  } 
+  .mainskills h4 {
+    font-weight: 600;
+  }
+  .project-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .project {
+    flex:0 0 50%;
+    max-width: 70%;
+  }
+  .project h4 {
+    font-size: large;
+  }
+  .project p {
+    color:#e5e5e5;
+    font-size: medium;
+    line-height: large;
+  }
+  .about-my .profile-photo {
+    margin-top: 30px;
+  }
+  .contact-content .contact-title h2 {
+    padding-bottom: 16px;
+  }
+  .contact-item a {
+    font-size: medium;
+  }
+  .contact-list {
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills-content .row .skills,
+  .skills-content .row .practiceskills {
+    color: #e5e5e5;
+    flex:0 0 50%;
+    max-width: 80%;
+    margin-top: 30px;
+  }
+  .project {
+    flex:0 0 50%;;
+    max-width: 80%;
+  }
+}
